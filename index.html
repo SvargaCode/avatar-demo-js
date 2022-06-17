@@ -1,0 +1,21 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Avatar</title>
+</head>
+
+<body>
+<canvas id="avatarCanvas" style="display:inline-block; width:100%; height:90%" ></canvas>
+<br/><br/>
+
+<script src="./spine-canvas-3.8.95.js"></script>
+<script src="./util.js"></script>
+<script src="./avatar.js"></script>
+
+<script type="text/javascript">
+    let avatar = new Avatar(avatarCanvas);
+    
+    setInterval(() => {
+        avatar.draw();
+    }, 1000 / 60);
+</script>
